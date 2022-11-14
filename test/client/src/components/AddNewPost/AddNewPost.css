@@ -1,0 +1,207 @@
+.modal {
+    
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
+  .showContent{
+    display: block;
+  }
+  .hideContent{
+    display: none;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color:rgb(245, 246, 248);;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    /* color: white; */
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    /* color: #000; */
+    color: rgb(150, 95, 95);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    /* background-color: rgb(102, 90, 114); */
+    background-color: rgba(235, 227, 227, 0.932);
+
+    color:rgb(102, 90, 114);
+    border-radius: 8px;
+  }
+  
+  .modal-body {padding: 16px 16px;
+    background-color: rgb(102, 90, 114);
+    border-radius: 5px;
+  }
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: rgb(102, 90, 114);
+    color: white;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .qoute-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 247);
+    color: rgb(102, 90, 114);
+  
+   
+    flex: 1 1 auto;
+    border-radius: 5px;
+    min-height: 120px;
+    
+
+  }
+  .textarea-post{
+    display: block;
+    border: 0;
+    outline: 0;
+    min-height: 90px;
+    border-radius: 5px;
+    padding: 8px;
+    font-size:large;
+    font-family: 'Roboto', sans-serif, Bold;
+    background-color: rgb(244, 244, 247);
+    color: rgb(81, 70, 83);
+  }
+  .textarea-post:hover, textarea:focus{
+    outline: 1px solid rgb(212, 212, 212);
+  
+    background-color: rgb(254, 254, 255);
+    /* border: 1px solid rgb(212, 212, 212); */
+   
+   
+  }
+  .input-author{
+    display: block;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    padding: 8px;
+    min-height: 30px;
+    font-size: medium;
+    text-align: left;
+    align-self: flex-end;
+    font-family: 'Roboto', sans-serif, Bold;
+    background-color: rgb(244, 244, 247);
+    color: rgb(81, 70, 83);
+  }
+  .input-author:focus, .input-author:hover{
+    outline: 0;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+  }
+  .authorLabel{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(244, 244, 247);
+  }
+  .authorLabel:hover, .authorLabel:focus{
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid rgb(212, 212, 212);
+  }
+
+  .input-tags{
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    background-color:  rgba(206, 203, 203, 0.932);;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 3px;
+    min-height: 30px;
+    font-size: medium;
+    text-align: left;
+    color: rgb(94, 92, 92);
+    align-self: flex-end;
+    font-family: 'Roboto', sans-serif, Bold;
+  }
+  .input-tags:focus, .input-tags:hover{
+    outline: 0;
+    border: 0;
+    background-color: rgba(235, 227, 227, 0.932);
+    
+    
+  }
+  .submit-tags, .submit-tags:focus{
+    border: 0;
+    outline: 0;
+    background-color: rgb(137, 124, 151);
+    border-radius: 5px;
+    padding: 8px;
+    margin: 3px;
+    
+    min-height: 30px;
+    font-size: medium;
+    color: aliceblue;
+  }
+  .submit-tags:hover{
+    background-color: rgb(154, 148, 160);
+  }
+  .addNewQuoteSubmit{
+    display: block;
+    border: 0;
+    outline: 0;
+    background-color: rgb(137, 124, 151);
+    border-radius: 5px;
+    padding: 8px 80px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    min-height: 30px;
+    font-size: medium;
+    color: aliceblue;
+    cursor: pointer;
+  }

@@ -1,0 +1,10 @@
+.tag{
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: rgb(207, 210, 218);
+    border-radius: 10px;
+    color: rgb(102, 90, 114);
+    color: cmyk;
+    margin-left: 2px;
+    cursor: pointer;
+}

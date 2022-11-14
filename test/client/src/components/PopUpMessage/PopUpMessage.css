@@ -1,0 +1,29 @@
+.pop{
+    display: none;
+   
+}
+.show{
+display: block;
+position: fixed; /* Stay in place */
+min-width: 250px;
+height: 50px;
+text-align: center;
+z-index: 2; /* Sit on top */
+left:0px;
+top: 50px;
+background-color: aliceblue;
+-webkit-animation-name:  animateMessage;
+    -webkit-animation-duration: 0.4s;
+    animation-name:  animateMessage;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animateMessage {
+    from {left:-250px; opacity:0} 
+    to {left:0px; opacity:1}
+  }
+  
+  @keyframes animateMessage {
+    from {left:-250px; opacity:0} 
+    to {left:0px; opacity:1}
+  }

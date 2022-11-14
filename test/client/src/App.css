@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box
+}
+.main{
+    font-family: 'Roboto', sans-serif, Bold;
+}

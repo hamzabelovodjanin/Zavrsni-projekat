@@ -1,0 +1,204 @@
+:root {
+    --color-white: #fff;
+    --color-light: #f1f5f9;
+    --color-black: #121212;
+    --color-night: #001632;
+    --color-red: #f44336;
+    --color-blue: #1a73e8;
+    --color-gray: #80868b;
+    --color-grayish: #dadce0;
+    --shadow-normal: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+a, button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: inherit;
+    line-height: inherit;
+    text-transform: unset;
+    text-rendering: optimizeLegibility;
+}
+.text-large {
+    font-size: 2rem;
+    font-weight: 600;
+    color:rgb(83, 77, 88);
+}
+
+.text-normal {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-black);
+}
+.text-links {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-blue);
+}
+.text-links:hover {
+    text-decoration: underline;
+}
+.master .wrapper {
+    max-width: 28rem;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    color: var(--color-black);
+    background: var(--color-white);
+    box-shadow: var(--shadow-large);
+}
+.master .wrapper .form {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+.master .wrapper .form .input-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+.master .wrapper .form .input-field {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: inherit;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    color: var(--color-black);
+    background: rgb(243, 235, 252);
+    text-transform: unset;
+    text-rendering: optimizeLegibility;
+}
+ .input-submit {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: inherit;
+    cursor: pointer;
+    min-width: 40%;
+    height: auto;
+    padding: 0.65rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    color: var(--color-white);
+    background: rgb(0, 255, 174);
+    box-shadow: var(--shadow-medium);
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1.5s;
+}
+ .input-submit.disabled {
+background-color: rgb(64, 55, 73);
+}
+.master .wrapper .striped {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+.master .wrapper .striped-line {
+    flex: auto;
+    flex-basis: auto;
+    border: none;
+    outline: none;
+    height: 2px;
+    background: var(--color-grayish);
+}
+.master .wrapper .striped-text {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: inherit;
+    color: var(--color-black);
+    margin: 0 1rem;
+}
+.master .wrapper .method-control {
+    margin-bottom: 1rem;
+}
+.master .wrapper .method-action {
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0.35rem 1.25rem;
+    outline: none;
+    border: 2px solid var(--color-grayish);
+    border-radius: 2rem;
+    color: var(--color-black);
+    background: var(--color-white);
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility;
+    transition: all 0.35s ease;
+}
+.master .wrapper .method-action:hover {
+    background: var(--color-light);
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.error{
+    color: #f44336;
+    font-size: small;
+}
+.headingQoute{
+    font-size:40px;
+    color:rgb(102, 90, 114);
+}
+.clrForQuote{
+    width: 300px;
+    text-align: center;
+    color:rgb(83, 77, 88);
+    font-size: 20px;
+    padding: 8px;
+   
+   box-shadow: 0 15px 15px -20px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}

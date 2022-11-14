@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+   align-items: stretch;
+    min-height: 100vh;
+    width: 100%;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(253, 253, 255);
+    justify-content:center;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 15px 15px -20px rgba(43, 1, 56, 0.342), 0 4px 6px -2px rgba(44, 2, 54, 0.05);
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.ascDesc{
+  margin-bottom: 20px;
+  border-radius: 5px;
+ 
+}
+.optAscDesc{
+    padding: 25px 20px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    max-height: 223px;
+    background: #fff;
+}
+.main-listOfQuotes-cntnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.listOfQoutes{
+   width: 100%;
+}
+.newQouteButton.button{
+    color: rgb(59, 59, 59);
+    text-transform: none;
+    border: 2px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+   
+}
+.newQouteButton.button:hover{
+color: rgb(14, 133, 224);
+background-color: #fff;
+border-bottom:2px solid rgb(93, 87, 114);
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.headingQuote{
+    padding: 8px;
+    color: rgb(76, 72, 78);
+}
+.headingQuote > span{
+    display: inline-block;
+    background-color: rgb(233, 233, 233);;
+    color: rgb(71, 49, 92);
+   
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 15px 15px -20px rgba(3, 0, 3, 0.1), 0 4px 6px -2px rgba(7, 0, 8, 0.05);
+}
+.linkButton{
+outline: 1px solid rgb(143, 127, 127);
+border: 1px solid white;
+border-radius: 3px;
+padding:17px;
+color: rgb(170, 161, 170);
+margin: 8px;
+}
+.linkButton:hover{
+    border: 1px solid rgb(106, 4, 202);
+    color: rgb(0, 255, 251);
+    /* outline: 1px solid rgb(71, 49, 92); */
+}
+.logo{
+    text-align: center;
+    color:rgb(83, 77, 88);
+}
